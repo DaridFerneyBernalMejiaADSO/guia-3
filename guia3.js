@@ -1,13 +1,20 @@
 addEventListener("DOMContentLoaded",()=>{
-let n = 0
-let gallinas= Number(prompt("cuantas gallinas son"))
-while (n<gallinas){
-    n++
-    let peso=Number(prompt("ingrese el peso de la gallina"))
-    let altura=Number(prompt("ingrese la altura de la gallina"))
-    let nh =Number(prompt("numeros de huevos que pone "))
-    let calidad=(peso*altura)/2
-    let total=calidad/gallinas
-console.log(`la cantidad de gallinas que es :${gallinas} su promedio del kilo es: ${total}`)
+let cantPro=0
+while(cantPro<10){
+    let n1=Number(prompt("ingrese un numero "))
+    let n2= Number(prompt("ingrese otro numero"))
+    let suma = n1 + n2
+    let multiplicacion = n1 * n2
+    let resta = n1 - n2
+    let division= n1/n2
+    console.log(`${n1} + ${n2}  = ${suma}`)
+    console.log(`${n1} * ${n2}  = ${multiplicacion}`)
+    console.log(`${n1} - ${n2}  = ${resta}`)
+    console.log(`${n1} / ${n2}  = ${division}`)
+    let p= prompt("coloca p para para o cualquier lettra para continuar")
+    if (p=='p'){
+        break
+    }
+
 }
 })
